@@ -1,0 +1,270 @@
+* {margin:0px;padding:0px;top:0px;left:0px;}
+body{
+	text-align: center;
+	background-color: #C59649;
+	background-image:url('images/verlauf_bg.jpg');
+	background-repeat:repeat-x;		
+}
+#central{
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	position: relative;
+	width: 900px;
+	text-align: left;
+	background-color: #FFFFFF;
+}
+#mapDiv{
+	width: 600px;
+	height: 310px;
+	background-color: #F0E68C;
+}
+#header{
+	margin-right: 0;
+	margin-left: 0;
+	margin-top: 0px;
+	position: absolute;
+	background-image: url(images/head01.jpg);
+	height: 75px;
+	width: 900px;
+	left: 0px;
+	top: 0px;
+}
+
+#menue{
+	/*background-image: url(images/header.jpg);*/
+	height: 33px;
+	width: 900px;
+	left: 0px;
+	top: 75px;
+	position: absolute;
+}
+
+#logo{
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+	position: absolute;
+	background-image: url(images/head02.jpg);
+	height: 33px;
+	width: 618px;
+	left: 0px;
+	top: 0px;
+}
+
+#navlist{
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+	white-space: nowrap;
+	position: absolute;
+	height: 33px;
+	width: 282px;
+	top: 0px;
+	left:618px;
+	background: url(images/head03.jpg);
+	font-family: Arial;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 33px;
+}
+
+#navlist li{
+	display: inline;
+	list-style-type: none;
+}
+
+#navlist li a {
+	padding: 0px 0px;
+	background-image: url(images/button_hg.jpg);
+	height: 33px;
+	width: 106px;
+	display: inline;
+	position: absolute;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+}
+
+#navlist li a span{
+	padding: 0px 0px;
+	background-image: url(images/button_hg.jpg);
+	height: 33px;
+	width: 106px;
+	display: inline;
+	position: absolute;
+	text-align: center;
+	color: #fff;
+	text-decoration: bold;
+	margin-top: 0px;
+}
+
+#navlist a:hover{background-image: url(images/button_hg.jpg); height: 33px; width: 106px;}
+
+#n1{left: 0px;}
+#n2{left: 106px;}
+
+/* Beginn Navisilt 2 ***************************************/
+
+#menue2{
+	height: 39px;
+	width: 900px;
+	left: 0px;
+	top: 603px;
+	position: absolute;
+}
+#navlist2{
+	margin-left: 0px;
+	padding-left: 0px;
+	white-space: nowrap;
+	position: absolute;
+	height: 32px;
+	width: 900px;
+	top: 0px;
+	background: url(images/menu-hg.jpg) repeat-x top left;
+	font-family: Arial;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+#navlist2 li{
+	display: inline;
+	list-style-type: none;
+}
+
+#navlist2 li a {
+	padding: 0px 0px;
+	background-image: url(images/button2.jpg);
+	height: 33px;
+	width: 110px;
+	display: inline;
+	position: absolute;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+}
+
+#navlist2 li a span{
+	padding: 0px 0px;
+	background-image: url(images/button2.jpg);
+	height: 33px;
+	width: 110px;
+	display: inline;
+	position: absolute;
+	text-align: center;
+	color: #fff;
+	text-decoration: bold;
+	margin-top: 0px;
+}
+
+#navlist2 a:hover{background-image: url(images/button-aktiv.jpg); height: 32px; width: 110px;}
+
+#n01{left: 60px;}
+#n02{left: 170px;}
+#n03{left: 280px;}
+#n04{left: 390px;}
+#n05{left: 500px;}
+#n06{left: 610px;}
+#n07{left: 720px;}
+
+/* Ende Navilist 2 *******************************************/
+#content{
+	margin-top: 108px;
+	position: absolute;
+	width: 900px;
+	height: 495px;
+	background-image: url(images/middle-hg.jpg);
+}
+#content2{
+	margin-top: 108px;
+	position: absolute;
+	width: 900px;
+	height: 495px;
+	background-image: url(images/middle2-hg.jpg);
+}
+#footer{
+	position: absolute;
+	margin-top: 635px;
+	width: 900px;
+	height: 90px;
+	background-image: url(images/foot-hg.jpg);
+	background-repeat: no-repeat;
+}
+#rightside{
+	float: left;
+	width: 750px;
+	height: 450px;
+	background-color: #E0CCB4;
+	margin-left: 70px;
+	margin-top: 25px;
+	overflow: hidden;
+}
+#rightside p{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	width: 430px;
+}
+#rightside table{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+}
+#rightside h1{
+	margin: 0px 0px 20px 0px;
+	margin-left: 20px;
+	width: 400px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #8B7B4E;
+}
+#rightside h2{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	width: 730px;
+}
+#rightside h3{
+	margin: 0px 0px 10px 0px;
+	margin-left: 0px;
+	width: 400px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #8B7B4E;
+}
+#rightside span{
+	margin-top: 10px;
+	margin-bottom: 4px;
+	width: 450px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #649721;
+}
+#rightside a{color: #666666;}
+
+#leftside{
+	float: left;
+	width: 300px;
+	height: 450px;
+	background-color: #FFFFFF;
+	margin-left: 20px;
+	margin-top: 25px;
+	overflow: hidden;
+}
+#imagepreloader{
+	visibility: hidden;
+	overflow: hidden;
+	height: 0px;
+	width: 0px;
+}

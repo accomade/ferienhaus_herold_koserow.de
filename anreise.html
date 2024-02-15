@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ferienwohnung Herold in Koserow - Lage und Anreise</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="central">
+	<div id="header"></div>
+	<div id="menue">
+		<div id="logo"></div>
+	  <ul id="navlist">
+	  	<li><a id="n1" href="index.html"><span>Startseite</span></a></li>
+      <li><a id="n2" href="kontakt.html"><span>Kontakt</span></a></li>
+    </ul>
+  </div>
+	<div id="content2">
+		<div id="rightside">
+			<h1>Lage und Anreise</h1>
+			<h2>Bei Anreise mit dem PKW erreichen Sie die Insel aus südlicher Richtung über die A20, Friedland und Anklam, sowie aus nördlicher Richtung über Stralsund, Greifswald und Wolgast. Im Seebad Koserow biegen Sie aus Richtung Wolgast kommend an der Feuerwehr rechts in die Fischerstraße ab.</h2>
+			<center><div id='mapDiv'></div></center>
+  <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+  <script>
+    map = new OpenLayers.Map("mapDiv");
+    map.addLayer(new OpenLayers.Layer.OSM());
+ 
+    var lonLat1 = new OpenLayers.LonLat( 13.99830 ,54.04880 )
+          .transform(
+            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+            map.getProjectionObject() // to Spherical Mercator Projection
+          );
+   
+    var zoom=14;
+    var markers = new OpenLayers.Layer.Markers( "Markers" );
+    <!--------------------------------------------------->
+		var size = new OpenLayers.Size(21,25);
+		var offset = new OpenLayers.Pixel(-(size.w/2), -size.h);
+		var icon1 = new OpenLayers.Icon('images/marker-red.png',size,offset);
+		<!--------------------------------------------------->
+    map.addLayer(markers);
+    markers.addMarker(new OpenLayers.Marker(lonLat1,icon1));
+    map.setCenter (lonLat1, zoom);
+  </script>
+			<div id="osm"><p>©<a href="http://www.openstreetmap.org">OpenStreetMap</a>
+   			und <a href="http://www.openstreetmap.org/copyright">Mitwirkende</a>,
+ 			<a href="http://creativecommons.org/licenses/by-sa/2.0/deed.de">CC-BY-SA</a></p>
+ 			</div>
+		</div>
+	</div>
+	<div id="menue2">
+	  <ul id="navlist2">
+	  	<li><a id="n01" href="koserow.html"><span>Koserow</span></a></li>
+      <li><a id="n02" href="insel-usedom.html"><span>Usedom</span></a></li>
+      <li><a id="n03" href="wohnung.html"><span>Wohnung</span></a></li>
+      <li><a id="n04" href="wohnung-preise.html"><span>Preise</span></a></li>
+      <li><a id="n05" href="belegung.html"><span>Belegung</span></a></li>
+      <li><a id="n06" href="anreise.html"><span>Anreise</span></a></li>
+      <li><a id="n07" href="impressum.html"><span>Impressum</span></a></li>
+    </ul>
+	</div>
+<div id="footer"></div>
+<div id="imagepreloader"><img src="images/buttonover.gif" alt="mouseover" /></div>
+</div>
+</body>
+</html>
